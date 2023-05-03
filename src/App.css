@@ -1,0 +1,22 @@
+.containerPadre{
+max-width: 100%;
+
+}
+.cona {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.carritoContenedor {
+  color: white;
+  display: flex;
+  position: relative;
+  /* padding: 0 0  0 150px; */
+}
+
+.carritoNumber {
+  right: 0;
+  bottom: 0;
+  font-size: small;
+}
+
