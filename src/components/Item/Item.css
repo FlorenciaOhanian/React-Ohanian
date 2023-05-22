@@ -1,0 +1,22 @@
+.cardProducto {
+    background-color: #5e7630cf;
+    border: 2 solid black;
+    border-radius: 28px;
+    padding: 20px;
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imgProducto {
+    width: 150px;
+    border-radius: 20px;
+    object-fit: contain;
+}
+
+.btnProducto{
+    background-color: black;
+    color: antiquewhite;
+    border-radius: 5px;
+}

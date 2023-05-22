@@ -1,3 +1,7 @@
+.body{
+  background-color: olivedrab;
+}
+
 .containerPadre{
 max-width: 100%;
 
@@ -6,7 +10,7 @@ max-width: 100%;
   display: flex;
   justify-content: space-around;
   width: 100%;
-  border: red 1px solid;
+
 }
 .carritoContenedor {
   color: white;
