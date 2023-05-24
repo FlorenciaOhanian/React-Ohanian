@@ -1,21 +1,25 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import ContenedorProductos from './components/ContenedorProductos/ContenedorProductos';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import NavBar from './components/NavBar/NavBar';
 import { Contador } from './components/Contador/Contador';
-import Item from './components/Item/Item';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 
 
 function App() {
   return (
-      <>
-      <NavBar/>
-      <ItemListContainer />
-      {/* <ContenedorProductos /> */}
-      <Contador inicial={1} stock={10}/>
-      <Item/>
-      </>
+    <>
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path='/' element={<ItemListContainer />} />
+          <Route path='/categoria/:idCat' element={<ItemListContainer />} />
+          <Route path='/item/:idItem' element={<ItemDetailContainer />} />
+        </Routes>
+        {/* <Contador inicial={1} stock={10} /> */}
+      </BrowserRouter>
+    </>
   );
 }
 

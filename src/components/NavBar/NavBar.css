@@ -1,5 +1,12 @@
 .logoCrudo{
     width: 150px;
     height: auto;
+}
 
+.cona a{
+text-decoration: none;
+color: white;
+}
+.cona a:hover{
+    color: grey;
 }

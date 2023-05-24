@@ -1,11 +1,12 @@
+
 .body{
   background-color: olivedrab;
 }
 
 .containerPadre{
 max-width: 100%;
-
 }
+
 .cona {
   display: flex;
   justify-content: space-around;
