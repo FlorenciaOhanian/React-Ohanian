@@ -1,12 +1,22 @@
-.logoCrudo{
+.logoCrudo {
     width: 150px;
     height: auto;
 }
 
-.cona a{
-text-decoration: none;
-color: white;
+.cona a {
+    text-decoration: none;
+    color: white;
 }
-.cona a:hover{
+
+.cona a:hover {
     color: grey;
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+}
+
+.navLinks li {
+    margin: 0 8px;
 }

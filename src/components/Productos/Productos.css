@@ -1,0 +1,27 @@
+.container-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2 rem;
+}
+
+.card-producto {
+    background-color: #5e7630cf;
+    border: 2 solid black;
+    border-radius: 28px;
+    padding: 20px;
+    margin: 40px;
+
+}
+
+.card-producto button{
+border: none;
+border-radius: 5px;
+padding: 0.5rem;
+cursor: pointer;
+margin-top:  1rem;
+}
+.card-producto button:hover {
+    color: white;
+    background-color: black;
+}

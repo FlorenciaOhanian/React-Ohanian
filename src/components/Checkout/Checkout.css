@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form{
+    background-color: rgb(52, 97, 46);
+    color: aliceblue;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+
+
+}
+
+label{
+    display: block;
+    width: 100%,
+
+}
+
+input{
+    margin-left: 30px;
+    border: 3px solid rgb(18, 19, 18);
+}
+
+button{
+    display: block;
+padding: 10px;
+border: 1px solid black;
+border-radius: 20px;
+cursor: pointer;
+}
+
+button:hover{
+    background-color: white;
+}

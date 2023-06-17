@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import { Link, NavLink } from "react-router-dom";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { Cart3 } from 'react-bootstrap-icons';
+import CartWidget from '../CartWidget/CartWidget'
 import "./NavBar.css"
 
 const NavBar = () => {
@@ -15,8 +15,8 @@ const NavBar = () => {
                         <Link to={"/"}>
                             <img className='logoCrudo' src='./img/logoCrudoBlanco.png'></img>
                         </Link>
-                        <Nav >
-                            <nav >
+                        <Nav>
+                            <nav className='navLinks' >
                                 <li>
                                     <NavLink to={"/categoria/1"}>Pastas</NavLink>
                                 </li>
@@ -30,10 +30,7 @@ const NavBar = () => {
                                     <NavLink to={"/categoria/4"}>Pizzas y empanadas</NavLink>
                                 </li>
                             </nav>
-                            <div className='carritoContenedor'>
-                                <Cart3 color='white' size="4rem" />
-                                <p className='carritoNumber'>3</p>
-                            </div>
+                            <CartWidget />
                         </Nav>
                     </div>
                 </Container>
