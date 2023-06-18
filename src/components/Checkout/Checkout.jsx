@@ -35,7 +35,7 @@ const Checkout = () => {
             apellido, 
             telefono,
             email,
-            fecha: new Date(),
+            
         };
         
         Promise.all(

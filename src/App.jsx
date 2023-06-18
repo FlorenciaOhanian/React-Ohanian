@@ -7,12 +7,14 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 import Productos from './components/Productos/Productos';
 import Cart from './components/Cart/Cart';
 import Checkout from './components/Checkout/Checkout';
+import { CarritoProvider } from './context/CarritoContext';
 
 
 function App() {
   return (
     <>
       <BrowserRouter>
+      <CarritoProvider>
         <NavBar />
         <Routes>
           <Route path='/' element={<Productos />} />
@@ -21,7 +23,7 @@ function App() {
           <Route path='/checkout' element={<Checkout />} />
           <Route path='/cart' element={<Cart/>}/>
         </Routes>
-
+      </CarritoProvider>
       </BrowserRouter>
 
     </>
