@@ -1,3 +1,14 @@
+button{
+    margin: 0.5rem;
+    display: block;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+}
 .btnCount{
 display: flex;
 gap: .5rem;
@@ -5,12 +16,20 @@ align-items: center;
 font-weight: bold;
 
 }
-.btnCount button{
+/* .btnCount button{
     padding: 0 5px;
     width: 2rem;
     height: 2rem;
-}
+    display: block;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+} */
 
-.btnConfirmacion{
-    margin: 0.5rem;
-}
+/* .btnConfirmacion{
+   
+} */

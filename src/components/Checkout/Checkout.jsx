@@ -5,7 +5,7 @@ import { collection, addDoc, updateDoc, doc, getDoc } from "firebase/firestore";
 import './Checkout.css';
 
 const Checkout = () => {
-    const { carrito, vaciarCarrito } = useContext(CarritoContext);
+    const { carrito, vaciarCarrito, total } = useContext(CarritoContext);
     const [nombre, setNombre] = useState("");
     const [apellido, setApellido] = useState("");
     const [telefono, setTelefono] = useState("");
@@ -30,14 +30,14 @@ const Checkout = () => {
                 nombre: producto.item.nombre,
                 cantidad: producto.cantidad
             })),
-            total: carrito.reduce((total, producto)=> total + producto.item.precio * producto.cantidad, 0),
+            total: carrito.reduce((total, producto) => total + producto.item.precio * producto.cantidad, 0),
             nombre,
-            apellido, 
+            apellido,
             telefono,
             email,
-            
+
         };
-        
+
         Promise.all(
             orden.items.map(async (productoOrden) => {
 
@@ -65,15 +65,16 @@ const Checkout = () => {
     }
 
     return (
-        <div>
+        <div className="formularioContainer">
             <h2>Checkout</h2>
-            <form onSubmit={manejadorFormulario} className="formulario">
+            <form onSubmit={manejadorFormulario} >
+                <p>Tu compra contiene:</p>
                 {carrito.map(producto => (
                     <div key={producto.item.id}>
                         <p>{producto.item.nombre} x {producto.cantidad}</p>
-                        <p>Total: $ {producto.item.precio}</p>
                     </div>
                 ))}
+                <p>Total: $ {total}</p>
                 <hr />
                 <div className="form">
                     <label htmlFor=""> Nombre </label>
@@ -101,11 +102,13 @@ const Checkout = () => {
 
                 {error && <p style={{ color: "red" }}>{error}</p>}
 
-                <button type="submit">Finalizar compra</button>
+                <div className="buttonCheckoutContainer">
+                    <button  type="submit">Finalizar compra</button>
+                </div>
             </form>
             {
                 ordenId && (
-                    <strong>Gracias por tu compra.. Tu numero de orden es {ordenId}</strong>
+                    <p className="tuOrden">Gracias por tu compra.. Tu numero de orden es {ordenId}</p>
                 )
             }
         </div>
