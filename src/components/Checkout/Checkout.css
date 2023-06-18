@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-form{
+form {
     background-color: rgb(52, 97, 46);
     color: aliceblue;
     width: 300px;
@@ -16,25 +16,29 @@ form{
 
 }
 
-label{
+label {
     display: block;
     width: 100%,
 
 }
 
-input{
+input {
     margin-left: 30px;
     border: 3px solid rgb(18, 19, 18);
 }
 
-button{
+button {
     display: block;
-padding: 10px;
-border: 1px solid black;
-border-radius: 20px;
-cursor: pointer;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
 }
 
-button:hover{
-    background-color: white;
+button:hover {
+    background-color: aliceblue;
+    color: black;
 }

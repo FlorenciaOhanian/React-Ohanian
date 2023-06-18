@@ -1,4 +1,12 @@
 .btnCount{
 display: flex;
+gap: .5rem;
+align-items: center;
+font-weight: bold;
 
+}
+.btnCount button{
+    padding: 0 5px;
+    width: 2rem;
+    height: 2rem;
 }
