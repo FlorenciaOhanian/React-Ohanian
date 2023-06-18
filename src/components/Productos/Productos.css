@@ -1,8 +1,9 @@
 .container-productos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 2 rem;
+    width: 100%;
+    justify-content: center;
+
 }
 
 .card-producto {
@@ -10,18 +11,24 @@
     border: 2 solid black;
     border-radius: 28px;
     padding: 20px;
-    margin: 40px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
 
 }
 
-.card-producto button{
-border: none;
-border-radius: 5px;
-padding: 0.5rem;
-cursor: pointer;
-margin-top:  1rem;
-}
-.card-producto button:hover {
-    color: white;
+.buttonDetail {
     background-color: black;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    cursor: pointer;
+    margin-top: auto;
+
+}
+
+.buttonDetail:hover {
+    color: black;
+    background-color: whitesmoke;
 }
