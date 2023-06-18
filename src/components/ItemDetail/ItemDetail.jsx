@@ -7,8 +7,8 @@ import { CarritoContext } from '../../context/CarritoContext'
 
 const ItemDetail = ({ id, nombre, precio, img, stock, descripcion }) => {
     const [agregarCantidad, setAgregarCantidad] = useState(0);
-
     const { agregarProducto } = useContext(CarritoContext);
+    const [finCompra, setFinCompra] = useState(false);
 
     const manejadorCantidad = (cantidad) => {
         setAgregarCantidad(cantidad);
@@ -16,6 +16,9 @@ const ItemDetail = ({ id, nombre, precio, img, stock, descripcion }) => {
         const item = { id, nombre, precio };
 
         agregarProducto(item, cantidad);
+        return (
+            <p>Producto agregado</p>
+        )
 
     }
 
@@ -26,7 +29,7 @@ const ItemDetail = ({ id, nombre, precio, img, stock, descripcion }) => {
             <p>{descripcion}</p>
             <img className='imgProducto' src={img} alt={nombre} />
             {
-                agregarCantidad > 0 ? (<Link to="/cart"> Terminar Compra </Link>) : (<ItemCount inicial={1} stock={stock} funcionAgregar={manejadorCantidad} />)
+                finCompra ? (<Link className="terminarCompra" to="/cart"> Terminar Compra </Link>) : (<ItemCount inicial={1} stock={stock} funcionAgregar={manejadorCantidad} setFinCompra={setFinCompra} />)
             }
         </div>
     )

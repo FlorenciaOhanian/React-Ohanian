@@ -15,12 +15,6 @@ const Productos = () => {
             })
     }, [])
 
-    const descontarStock = async (producto) => {
-        const productoRef = doc(db, "productos", producto.id);
-        let nuevoStock = producto.stock - 1;
-        await updateDoc(productoRef, { stock: nuevoStock });
-    }
-
     return (
         <>
             <h2>Nuestros productos</h2>
