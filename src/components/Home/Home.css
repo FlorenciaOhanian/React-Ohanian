@@ -1,0 +1,13 @@
+.homeCat {
+    width: 100%;
+    margin: 3rem 0 5rem 0;
+    display: flex;
+    flex-direction: column;
+}
+.tituloContainer{
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+}
+.catContainer{
+    display: flex;
+}
