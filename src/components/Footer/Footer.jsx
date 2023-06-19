@@ -6,7 +6,7 @@ const Footer = () => {
         <div>
             <footer className="footer">
                     <div>
-                        <p>Nos encontraras en Jome Manuel Estrada 1356</p>
+                        <p>Nos encontraras en Jose Manuel Estrada 1356</p>
                     </div>
                     <div>
                         <p>Lunes a Sábado: 09.00 a 17.00 hs.</p>
