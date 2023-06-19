@@ -1,3 +1,10 @@
 .contenedorProductos{
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.imgProducto{
+    width: 100%;
 }

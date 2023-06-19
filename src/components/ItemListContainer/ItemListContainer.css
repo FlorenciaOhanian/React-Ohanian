@@ -1,0 +1,9 @@
+.itemListContainer{
+    background-color: #f7f5e8;
+    padding-bottom: 2rem
+}
+
+.itemListContainer h2{
+    text-align: center;
+    padding-top: 1rem;
+}

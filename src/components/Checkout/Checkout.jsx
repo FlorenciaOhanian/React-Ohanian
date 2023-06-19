@@ -66,7 +66,7 @@ const Checkout = () => {
 
     return (
         <div className="formularioContainer">
-            <h2>Checkout</h2>
+            <h2 className="checkOutText">Checkout</h2>
             <form onSubmit={manejadorFormulario} >
                 <p>Tu compra contiene:</p>
                 {carrito.map(producto => (

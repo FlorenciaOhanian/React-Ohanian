@@ -52,7 +52,8 @@ justify-content: right;
     background-color: white;
     color: black;
 }
-h2 {
+
+.checkOutText{
     margin: 1rem 0;
 text-align: center;
 }

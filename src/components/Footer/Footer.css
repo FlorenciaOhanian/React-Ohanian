@@ -1,0 +1,11 @@
+.footer {
+    background-color: rgba(228,215,170,255);
+    color: #637401 ;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.horariosFooter{
+    flex-direction: row;
+}

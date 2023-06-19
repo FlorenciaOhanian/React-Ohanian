@@ -1,0 +1,22 @@
+import React from 'react'
+import "./Footer.css"
+
+const Footer = () => {
+    return (
+        <div>
+            <footer className="footer">
+            <div className="horarios-footer">
+                <div>
+                <p>Nos encontraras en Jome Manuel Estrada 1356</p>
+                </div>
+                <p>Lunes a Sábado: 09.00 a 17.00 hs.</p>
+                <p>Domingo: 09.30-13.00 hs</p>
+            </div>
+        </footer>
+        </div>
+    )
+}
+
+export default Footer
+
+

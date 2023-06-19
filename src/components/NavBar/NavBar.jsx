@@ -9,7 +9,7 @@ import "./NavBar.css"
 const NavBar = () => {
     return (
         <>
-            <Navbar bg="dark" variant="dark">
+            <Navbar className='navBar'>
                 <Container className='containerPadre'>
                     <div className="cona">
                         <Link to={"/"}>

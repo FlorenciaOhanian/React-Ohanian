@@ -1,0 +1,25 @@
+.containerCabezera{
+background-color: #637401;
+display: flex;
+width: 100%;
+}
+
+.imgCabezera {
+max-width: 50%;
+overflow: hidden;
+
+}
+
+.imgCabezera img{
+width: 100%;
+object-fit: contain;
+}
+.textCabezera{
+width: 50%;
+font-size: larger;
+color: white;
+margin: 2rem;
+display: flex;
+align-items: center;
+}
+

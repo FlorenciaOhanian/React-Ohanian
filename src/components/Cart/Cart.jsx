@@ -12,7 +12,7 @@ const Cart = () => {
         return (
             <>
                 <h2> Carrito vacio</h2>
-                <Link to='/'> Ver Productos </Link>
+                <Link className="btnCart" to='/'> Ver Productos </Link>
             </>
         )
     }
